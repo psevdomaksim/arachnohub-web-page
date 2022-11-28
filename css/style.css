@@ -14,7 +14,7 @@
   background: #eee;
   display: flex;
   flex-wrap: wrap;
-  font-size: 18px;
+  font-size: 19px;
 }
 .modal-opacity{
   position: fixed;
@@ -85,8 +85,6 @@
   max-width: 1200px;
   background-color:white;
   margin: 0 auto 10px auto;
-  transition-duration: 1s;
-
 }
 
 .row {
@@ -113,7 +111,7 @@ li a {
 
 figcaption{
   text-align: center;
-  /* background-color: #6a5acd; */
+  padding:5px;
   color: #6a5acd;
   font-weight: bold;
 }
@@ -124,7 +122,6 @@ figcaption{
   justify-content: center;
   align-items: center;
   min-width: 100%;
-  background-color: #5255bf;
 }
 .col_footer{
   display: flex;
@@ -169,13 +166,9 @@ figcaption{
   margin: 15px;;
 }
 .footer-block{
-  background-color: #fff;
   margin: 15px;
   width: 30%;
-  height: 200px;
-}
-.footer-icons{
-/*   background-color: #4169e1; */
+  height: 150px;
 }
 
 .footer-icons a {
@@ -191,6 +184,10 @@ figcaption{
   padding: 3px;
 }
 
+.footer,.top-menu{
+  background-color: #cccae3;
+}
+
 
 .twitter a {background: #00aced; color: #fff;}
 .instagram a {background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); color: #fff;}
@@ -200,10 +197,11 @@ figcaption{
 .twitter a:hover,.instagram a:hover,.vk a:hover,.telegram a:hover  {transform: scale(1.1);}
 
 .top-menu {
-  background: rgba(255,255,255,.5);
   box-shadow: 3px 0 7px rgba(0,0,0,.3);
   padding: 20px;
 }
+
+
 .navbar-logo {
   display: inline-block;
 }
@@ -267,6 +265,10 @@ figcaption{
     width: 100%; 
     height: 400px;
   }
+  .page
+  {
+    font-size: 16px;
+  }
 }
 
 /* смартфоны */
@@ -280,6 +282,10 @@ figcaption{
     width: 100%;
     height: 300px;
   }
+  .page
+{
+  font-size: 14px;
+}
 }
 
 
