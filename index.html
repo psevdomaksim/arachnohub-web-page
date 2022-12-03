@@ -1,366 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>ArachnoHub</title>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, user-scalable=yes"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
-  </head>
 
-  <body>
-    <div class="modal-opacity" id="modal-opacity" onclick="closeModal()"></div>
-    <div class="modal-block">
-      <div class="close-button" onclick="closeModal()"></div>
-      <h1>BRACHYPELMA SMITTI</h1>
-      <div class="flex">
-        <img class="modal-image" src="./images/brachypelma_smitti.jpg" />
-        <div class="modal-text">
-          <h2>Описание</h2>
-          <p>
-            Brachypelma smithi (брахипельма смити) — мексиканский красноколенный
-            птицеед, более известный среди любителей экзотических животных на
-            своем латинском названии. Он является одним из самых красивых,
-            тихих, неагрессивных и простых в содержании пауков-птицеедов.
-          </p>
+<head>
+  <title>ArachnoHub</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=yes" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a href="#">
+              <img style="vertical-align: middle" src="./images/logo.png" alt="logo" width="60" height="60" />
+            </a>
+            <span style="font-size: 24px">ArachnoHub</span>
+          </div>
+
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="header-link" href="#">О нас</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </header>
 
-      <div class="modal-flex">
-        <div class="modal-text">
-          <h2>Внешность</h2>
-          <p>
-            Окрас туловище темного цвета с красно – оранжевыми полосками на
-            лапках. Это является главной отличительной особенностью данной
-            породы от других.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Поведение</h2>
-          <p>
-            Темперамент насекомого можно считать ангельским. Если к питомцу не
-            проявлять ни малейшей агрессии, то насекомое никогда не бросится в
-            атаку и не укусит. По своей природе Брахипельма наделен ядом, но по
-            отношению к человеку вещество не является опасным. На месте укуса
-            может возникнуть покраснение и небольшое раздражение.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Сроки жизни</h2>
-          <p>
-            Мексиканский красно-коленный птицеед – рекордсмен по
-            продолжительности жизни среди пауков. Самец может прожить около 6
-            лет, а самки до 20. Однако встречаются случаи, когда они живут более
-            20 лет. Это внушительный срок, ведь 20 лет – гораздо больше жизни
-            других домашних питомцев.
-          </p>
-        </div>
-      </div>
-    </div>
+    <main class="main">
+      <div class="wrapper">
+        <article class="article">
+          <div class="image-block">
+            <img class="image" src="./images/main_image.jpg" alt="main image" />
+          </div>
+          <div class="text-block">
+            <p>
+              Пауки-птицееды все больше и больше завоевывают сердца людей и
+              догоняют рыбок по популярности, как домашних животных. Всего
+              насчитывается более семи сотен видов и этот список каждый год
+              пополняется, но существуют виды, завоевавшие наибольшую
+              популярность в содержании. Такие пауки обладают красивым
+              окрасом, интересным поведением и большой плодовитостью, и
+              вследствие этого получили большое распространение среди
+              любителей содержать экзотику дома.
+            </p>
+          </div>
+        </article>
 
-    <div class="modal-block">
-      <div class="close-button" onclick="closeModal()"></div>
-      <h1>BRACHYPELMA VAGANS</h1>
-      <div class="flex">
-        <img class="modal-image" src="./images/brachypelma_vagans.jpg" />
-        <div class="modal-text">
-          <h2>Описание</h2>
-          <p>
-            Brachypelma vagans – один из популярнейших птицеедов в качестве
-            экзотического питомца. Он уступает этот титул только своему
-            родственнику Brachypelma albopilosum. В природе пауки живут во
-            влажных лесах Мексики, Сальвадора и Гватемалы, роя норы в лесной
-            подстилке.
-          </p>
-        </div>
-      </div>
+        <div class="flex">
+          <div class="image-block">
+            <figure>
+              <div class="image">
+                <img class="content-image" src="./images/brachypelma_smitti.jpg" alt="brachypelma smitti"
+                  onclick="createModal(this.id)" />
+              </div>
+              <figcaption>Brachypelma Smitti</figcaption>
+            </figure>
+          </div>
 
-      <div class="modal-flex">
-        <div class="modal-text">
-          <h2>Внешность</h2>
-          <p>
-            Окрас у паука является его своеобразной изюминкой: сам паук черного
-            цвета, особенно насыщенный у основания конечностей, а ярко-красные
-            волоски на брюшке придают пауку особую оригинальность. Размеры самок
-            варьируются от 6 до 7 сантиметров по телу, в размахе лап до 20
-            сантиметров.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Поведение</h2>
-          <p>
-            Птицеед любит рыть норы, что является нехарактерно для брахипельм,
-            но чаще находится на поверхности, а нору использует только как
-            укрытие. Что касается характера – паук может сбить с толку даже
-            опытных киперов. Дело в том, что ваганс может быть как очень
-            агрессивным, становясь в угрожающую стойку и пытаясь укусить при
-            любой возможности, так и очень спокойным, практически как
-            Brachypelma albopilosum.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Сроки жизни</h2>
-          <p>Продолжительность жизни около 15-20 лет.</p>
-        </div>
-      </div>
-    </div>
+          <div class="image-block">
+            <figure>
+              <div class="image">
+                <img class="content-image" src="./images/brachypelma_vagans.jpg" alt="brachypelma vagans"
+                  onclick="createModal(this.id)" />
+              </div>
 
-    <div class="modal-block">
-      <div class="close-button" onclick="closeModal()"></div>
-      <h1>BRACHYPELMA ALBOPILOSUM</h1>
-
-      <div class="flex">
-        <img class="modal-image" src="./images/brachypelma_albopilosum.jpg" />
-        <div class="modal-text">
-          <h2>Описание</h2>
-          <p>
-            Во влажных тропических лесах Гондураса и Коста-Рики обитает
-            паук-птицеед брахипельма альбопилозум. Он имеет яркую окраску,
-            длинные волоски и довольно крупное тело. Этот вид птицеедов идеален
-            для содержания в домашних условиях, поскольку имеет спокойный нрав,
-            он красив и стоит недорого, а главное — его укус безопасен.
-          </p>
-        </div>
-      </div>
-
-      <div class="modal-flex">
-        <div class="modal-text">
-          <h2>Внешность</h2>
-          <p>
-            Окрас у паука является его своеобразной изюминкой: сам паук черного
-            цвета, особенно насыщенный у основания конечностей, а ярко-красные
-            волоски на брюшке придают пауку особую оригинальность. Размеры самок
-            варьируются от 6 до 7 сантиметров по телу, в размахе лап до 20
-            сантиметров.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Поведение</h2>
-          <p>
-            Взрослая особь brachypelma albopilosum имеет тихий нрав,
-            малоподвижен и может просидеть весь день не шелохнувшись. Но в юном
-            возрасте, передвигаются они быстро и очень активны. Настолько, что
-            необходимо закрывать крышку террариума, чтобы не сбежал. Когда
-            насекомое берут в руки, важно делать это аккуратно, чтобы не
-            спугнуть паучка. Иначе он может скинуть свои защитные волоски.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Сроки жизни</h2>
-          <p>
-            В условиях хорошего содержания продолжительность жизни самок может
-            достигнуть 20 лет, а порой даже 30. Насекомые растут достаточно
-            медленно.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-block">
-      <div class="close-button" onclick="closeModal()"></div>
-      <h1>BRACHYPELMA ALBOPILOSUM</h1>
-      <div class="flex">
-        <img class="modal-image" src="./images/avicularia_versicolor.jpg" />
-        <div class="modal-text">
-          <h2>Описание</h2>
-          <p>
-            Авикулярия версиколор (Avicularia (Caribena) versicolor) -
-            популярный птицеед среди коллекционеров и любителей пауков.
-            Считается одним из самых красивых птицеедов планеты. Древесный вид,
-            в природе карибена версиколор заселяет пустоты в деревьях и между
-            ветвями. Поедает различных членистоногих и мелких позвоночных.
-          </p>
-        </div>
-      </div>
-
-      <div class="modal-flex">
-        <div class="modal-text">
-          <h2>Внешность</h2>
-          <p>
-            Взрослые животные имеют переливающийся зеленым карапас, опистосома и
-            ноги красновато-розового цвета. Молодые животные имеют красивый
-            синий цвет с темным поперечным узором на опистосоме. По размеру этот
-            птицеед небольшой, максимальная длина в размахе лап взрослой особи
-            составляет 16 сантиметров при длине тела 6 сантиметров.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Поведение</h2>
-          <p>
-            Пауки ведут древесный образ жизни. В природе они заселяют пустоты в
-            деревьях и между ветвями, где плетут сложную воронкообразную паутину
-            с двумя выходами, на высоте нескольких метров. Большую часть времени
-            авикулярия проводит в укрытиях, а с наступлением темноты выходит на
-            охоту. Хотя авикулярия достаточно ловкий и быстрый птицеед,
-            например, если он чувствует порыв ветра, то может прыгнуть, пытаясь
-            убежать.
-          </p>
-        </div>
-        <div class="modal-text">
-          <h2>Сроки жизни</h2>
-          <p>
-            Хотя многие виды пауков-птицеедов считаются рекордсменами по
-            продолжительности жизни (некоторые экземпляры, например, мексиканца,
-            носящего наименование Брахипельма Эмилия, способны доживать до
-            30-летнего возраста), жизненный цикл Авикулярии версиколор ограничен
-            6-8 годами.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="page">
-      <header class="header">
-        <div class="wrapper">
-          <div class="header-wrapper">
-            <div class="header-logo">
-              <a href="#">
-                <img
-                  style="vertical-align: middle"
-                  src="./images/logo.png"
-                  width="60px"
-                  height="60px"
-                />
-              </a>
-              <span style="font-size: 24px">ArachnoHub</span>
-            </div>
-
-            <nav class="header-nav">
-              <ul class="header-list">
-                <li class="header-item">
-                  <a class="header-link" href="#">О нас</a>
-                </li>
-                <li class="header-item">
-                  <a class="header-link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+              <figcaption>Brachypelma Vagans</figcaption>
+            </figure>
           </div>
         </div>
-      </header>
-
-      <main class="main">
-        <div class="wrapper">
-        
-            <article class="article">
-              <div class="image-block">
-                <img class="image" src="./images/main_image.jpg" alt="alt" />
-              </div>
-              <div class="text-block">
-                <p>
-                  Пауки-птицееды все больше и больше завоевывают сердца людей и
-                  догоняют рыбок по популярности, как домашних животных. Всего
-                  насчитывается более семи сотен видов и этот список каждый год
-                  пополняется, но существуют виды, завоевавшие наибольшую
-                  популярность в содержании. Такие пауки обладают красивым
-                  окрасом, интересным поведением и большой плодовитостью, и
-                  вследствие этого получили большое распространение среди
-                  любителей содержать экзотику дома.
-                </p>
-              </div>
-            </article>
-        
-
-          <picture>
-            <div class="flex">
-              <div class="image-block">
-                <figure class="image">
-                  <img
-                    class="content-image"
-                    src="./images/brachypelma_smitti.jpg"
-                    alt="alt"
-                    onclick="showModal(this.id)"
-                  />
-                </figure>
-                <figcaption>Brachypelma Smitti</figcaption>
+        <div class="flex">
+          <div class="image-block">
+            <figure>
+              <div class="image">
+                <img class="content-image" src="./images/brachypelma_albopilosum.jpg" alt="brachypelma albopilosum"
+                  onclick="createModal(this.id)" />
               </div>
 
-              <div class="image-block">
-                <figure class="image">
-                  <img
-                    class="content-image"
-                    src="./images/brachypelma_vagans.jpg"
-                    alt="alt"
-                    onclick="showModal(this.id)"
-                  />
-                </figure>
+              <figcaption>Brachypelma Albopilosum</figcaption>
+            </figure>
+          </div>
 
-                <figcaption>Brachypelma Vagans</figcaption>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="image-block">
-                <figure class="image">
-                  <img
-                    class="content-image"
-                    src="./images/brachypelma_albopilosum.jpg"
-                    alt="alt"
-                    onclick="showModal(this.id)"
-                  />
-                </figure>
-
-                <figcaption>Brachypelma Albopilosum</figcaption>
+          <div class="image-block">
+            <figure>
+              <div class="image">
+                <img class="content-image" src="./images/avicularia_versicolor.jpg" alt="avicularia versicolor"
+                  onclick="createModal(this.id)" />
               </div>
 
-              <div class="image-block">
-                <figure class="image">
-                  <img
-                    class="content-image"
-                    src="./images/avicularia_versicolor.jpg"
-                    alt="alt"
-                    onclick="showModal(this.id)"
-                  />
-                </figure>
-
-                <figcaption>Avicularia Versicolor</figcaption>
-              </div>
-            </div>
-          </picture>
+              <figcaption>Avicularia Versicolor</figcaption>
+            </figure>
+          </div>
         </div>
-      </main>
+      </div>
+    </main>
 
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="footer-wrapper">
-            <section class="footer-block">
-              <h3>О нас</h3>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-wrapper">
+          <section class="footer-block">
+            <h3>О нас</h3>
+            <p>
+              На нашем сайте вы узнаете как выбрать питомца и как его
+              правильно содержать.
+            </p>
+          </section>
+
+          <section class="footer-block">
+            <h3>Контакты</h3>
+            <div class="flex footer-icons">
+              <div class="vk">
+                <a href="#"><i class="fa fa-vk"></i></a>
+              </div>
+              <div class="telegram">
+                <a href="#"><i class="fa fa-paper-plane"></i></a>
+              </div>
+              <div class="twitter">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="instagram">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
               <p>
-                На нашем сайте вы узнаете как выбрать питомца и как его
-                правильно содержать.
+                Вы можете связаться с нами перейдя по любой удобной для вас
+                ссылке.
               </p>
-            </section>
-
-            <section class="footer-block">
-              <h3>Контакты</h3>
-              <div class="flex footer-icons">
-                <div class="vk">
-                  <a href="#"><i class="fa fa-vk"></i></a>
-                </div>
-                <div class="telegram">
-                  <a href="#"><i class="fa fa-paper-plane"></i></a>
-                </div>
-                <div class="twitter">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="instagram">
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                </div>
-                <p>
-                  Вы можете связаться с нами перейдя по любой удобной для вас
-                  ссылке.
-                </p>
-              </div>
-            </section>
-          
-          </div>
-         
-          <div class="copyright">&copy;ArachnoHub 2022 </div>
+            </div>
+          </section>
         </div>
-      </footer>
-    </div>
-  </body>
+
+        <div class="copyright">&copy;ArachnoHub 2022</div>
+      </div>
+    </footer>
+  </div>
   <script src="js/app.js"></script>
+</body>
+
 </html>
