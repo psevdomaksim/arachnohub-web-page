@@ -103,6 +103,7 @@
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .header-logo a {
@@ -131,6 +132,10 @@
   color: #fff;
   transition: 0.3s linear;
   text-shadow: #33383b 0px 2px 3px;
+}
+
+.header-link:last-child {
+  margin-right: 0;
 }
 
 /* main content */
