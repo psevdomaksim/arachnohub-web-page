@@ -33,6 +33,7 @@
   text-align: center;
   margin-bottom: 10px;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .modal-flex {
@@ -103,11 +104,17 @@
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .header-logo a {
   text-decoration: none;
+}
+
+.header-logo__text{
+  font-size: 24px;
+  font-weight: 600;
+  user-select: none;
 }
 
 .header-list {
@@ -128,10 +135,14 @@
   margin-right: 40px;
   font-size: 18px;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
-  transition: 0.3s linear;
-  text-shadow: #33383b 0px 2px 3px;
+  text-shadow: #33383b 0px 1px 3px;
+}
+
+.header-link:hover{
+  font-weight: 700;
+  text-decoration: solid 1px white;
 }
 
 .header-link:last-child {
@@ -142,6 +153,10 @@
 .main {
   margin: auto;
   width: 100%;
+}
+
+.spider-images{
+  margin-bottom: 20px;
 }
 
 figcaption {
@@ -186,7 +201,7 @@ figcaption {
 
 .image-block {
   width: 32%;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
 }
 
 .text-block {
@@ -199,6 +214,7 @@ figcaption {
   width: 100%;
   background-color: #cccae3;
   box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+  padding: 1px;
 }
 
 .footer-wrapper {
@@ -214,6 +230,11 @@ figcaption {
 }
 .footer-block h3 {
   font-weight: 600;
+  font-size: 19px;
+}
+
+.footer-block p {
+  margin: 10px 0;
 }
 
 .footer-icons a {
@@ -285,7 +306,7 @@ figcaption {
   transform: scale(1.1);
 }
 
-/* tablets */
+/*  tablets, laptops  */
 @media (max-width: 1024px) {
   .text-block {
     min-width: 90%;
@@ -345,6 +366,9 @@ figcaption {
 }
 
 @media (max-width: 840px) {
+  p{
+    font-size: 16px;
+  }
   .menu {
     float: none;
   }
@@ -366,9 +390,6 @@ figcaption {
     height: 25em;
   }
 
-  .page {
-    font-size: 17px;
-  }
 
   .modal-block h1 {
     font-size: 30px;
@@ -391,8 +412,8 @@ figcaption {
     height: 18em;
   }
 
-  .page {
-    font-size: 16px;
+  p{
+    font-size: 15px;
   }
 
   .modal-block {
@@ -492,13 +513,6 @@ figcaption {
   font-size: 0.75em;
 }
 
-.page {
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 18px;
-}
-
 .wrapper {
   width: 100%;
   max-width: 1200px;
@@ -515,4 +529,5 @@ html {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
+  font-size: 17px;
 }
